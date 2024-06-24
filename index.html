@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZAPATERIAS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contacto</h1>
+        <button id="menu-toggle">Menú</button>
+        <nav>
+            <ul>
+                <li><a href="PRINCIPAL.html">PRINCIPAL</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Me presento...</h1>
+            <p><i>Hola, mi nombre es <b>URIEL SALAZAR MENDEZ</b> y soy estudiante del CECYTE Plantel Chignahuapan.</i></p>
+        </section>
+
+        <section>
+            <h1>Tablas</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido Paterno</th>
+                        <th>Apellido Materno</th>
+                        <th>E-Mail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nicolas</td>
+                        <td>Valencia</td>
+                        <td>Perez</td>
+                        <td>n.valenciap.chg.22@cecyte.edu.mx</td>
+                    </tr>
+                    <tr>
+                        <td>Julian</td>
+                        <td>Morales</td>
+                        <td>Marquez</td>
+                        <td>j.moralesm.chg.22@cecyte.edu.mx</td>
+                    </tr>
+                    <tr>
+                        <td>Uriel</td>
+                        <td>Salazar</td>
+                        <td>Mendez</td>
+                        <td>7971187012</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h1>Formularios</h1>
+            <p>Formulario de contacto</p>
+            <form>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" /><br>
+                <label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos" name="apellidos" /><br>
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" /><br>
+                <label for="genero">Género</label>
+                <select id="genero" name="genero">
+                    <option value="hombre">Hombre</option>
+                    <option value="mujer">Mujer</option>
+                </select><br>
+                <input type="submit" value="Enviar" />
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Zapaterías</p>
+    </footer>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            var nav = document.querySelector('header nav ul');
+            if (nav.style.display === 'block') {
+                nav.style.display = 'none';
+            } else {
+                nav.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>
